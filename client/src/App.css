@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Imprint MT shadow', sans-serif;  /* Updated to Quicksand */
+  background: linear-gradient(135deg, #fcefee, #e0f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Main container */
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fffafa;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Heading */
+h1 {
+  font-family: 'Baskerville Old face', serif;  /* Updated to Playfair Display */
+  font-size: 3rem;
+  font-weight: 600;
+  color: #5e548e;
+  margin-bottom: 25px;
+}
+
+/* Form Container */
+.form-box {
+  padding: 20px;
+}
+
+.form-page label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Inputs & Select */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d8bfd8;
+  border-radius: 10px;
+  background-color: #f9f7ff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #a5a5f5;
+}
+
+/* Checkbox & Radio */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #ffb6b9;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 24px;
+  background-color: #a5a5f5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #918df9;
+  transform: translateY(-2px);
+}
+
+/* Add spacing between form pages if needed */
+.form-page {
+  margin-bottom: 20px;
+}
+.fade-in {
+  opacity: 0;
+  animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+.portfolio-container {
+  text-align: center;
+  background-color: #fff5f8;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+.portfolio-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #6a4c93;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.portfolio-section {
+  margin-bottom: 18px;
+}
+
+.portfolio-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px; /* reduce spacing */
+  text-align: center;
+}
+
+.portfolio-section p,
+.portfolio-section ul,
+.portfolio-section li {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin: 2px 0; /* compact spacing */
+  list-style-position: inside;
+}
